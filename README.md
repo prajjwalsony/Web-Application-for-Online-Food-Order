@@ -1,8 +1,8 @@
-# Web Application for P2P Chat, File Transfer and Live Gaming on a Local Network
+# Web Application for Online Food Order
 
 ## Project Overview
 
-Web Application for Online Food Order
+A simple web application for the demonstration of Rest API, Database handling, Dynamic content loading, Isolated design and error handling
 
 ## Key Features
 
