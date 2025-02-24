@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Food Ordering Service</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+
+<body class="blur-body">
+    <div class="navbar">
+        <div class="nav-left">
+            <div class="leftdiv"><a href="index.html" class="nav-link">
+                    <p>Home</p>
+                </a></div>
+            <div class="leftdiv"><a href="order.html" class="nav-link">
+                    <p>Order</p>
+                </a></div>
+            <div class="leftdiv"><a href="cart.html" class="nav-link">
+                    <p>Cart</p>
+                </a></div>
+            <div class="leftdiv"><a href="#home" class="nav-link">
+                    <p>About</p>
+                </a></div>
+        </div>
+        <div class="nav-center">
+            <!-- <img src="images/BiteQuick-removebg-preview.png" alt=""> -->
+        </div>
+        <div class="nav-right">
+            <a href="#reservation" class="reservation-btn">Add Restaurant</a>
+            <a href="">
+                <div class="profile"> </div>
+            </a>
+        </div>
+    </div>
+    <div class="form">
+        <form action="" method="post">
+            <input id="searchBar" type="text" placeholder="Search for Restaurants and Food">
+        </form>
+    </div>
+    
+
+    <div class="restaurant-container" id="restaurant-container">
+        <div class="restaurant-card" data-id="rest1">
+            <div></div>
+            <h3>Restaurant 1</h3>
+        </div>
+        <div class="restaurant-card"  data-id="rest2">
+            <div></div>
+            <h3>Restaurant 2</h3>
+        </div>
+        <!-- Add more restaurant cards as needed -->
+    </div>
+
+    <div id="main-menu-div" data-restId="" data-restName="">
+        <div id="second-main-div">
+            <h2 class="menu-category" data-category="">Main Course</h2>
+            <div class="item" data-item="">
+                <h3>Butter Chicken</h3>
+                <h3 class="price" data-price="200">&#x20b9 200</h3>
+                <div class="button-group">
+                    <button class="add" onclick="add(this)">ADD</button>
+                    <button class="remove" onclick="remove(this)">REMOVE</button>
+                </div>
+                <h4 class="count" data-count="0">0 Items Added</h4>
+            </div>
+        </div>
+        <button id="addToCart" onclick="addtocart()" style="background-color: #7809ff; color: white;", class="add">Add To Cart</button>
+        <!-- <div id="cartfilled" style="display: none; color: red; font-size: 20px;">Cart is Already filled with other resturent</div> -->
+    </div>
+
+    <div class="spinner-main" id="spinner">
+        <div class="spinner-second">
+            <div style="color: #7809ff;"><img src="images/spinner3.gif" width="50px"></div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">hello</div>
+    <a href="cart.html"><div id="gotocart" class="popup" style="display: none; background-color: #7809ff; top: 30%;left: 82%;">Go to Cart</div></a>
+
+
+</body>
+
+
+
+<script src="order.js"></script>
+
+</html>
